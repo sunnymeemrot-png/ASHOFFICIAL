@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCHIT SINGH TRADER – Premium Trading Signals</title>
 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="card">
+            <div class="card-glow"></div>
+
+            <div class="profile-wrap">
+                <div class="profile">
+                    <img src="profile.jpg" alt="profile" class="profile-img">
+                    <div class="badge">✔</div>
+                </div>
+            </div>
+
+            <h1 class="title">ROCHIT SINGH TRADER</h1>
+            <h2 class="subtitle">PREMIUM TRADING SIGNALS</h2>
+
+            <p class="desc">
+                Join our exclusive Telegram channel for premium trading signals and maximize your profits!
+            </p>
+
+            <a class="cta" href="https://t.me/+cy4GSgQRyG4yMGRl" target="_blank" rel="noopener noreferrer">
+                <span class="cta-icon">✈</span>
+                <span class="cta-text">JOIN TELEGRAM — ROCHIT SINGH TRADER</span>
+            </a>
+
+            <p id="redirect-timer" class="redirect">Redirecting in 30:00...</p>
+
+            <p class="footer">
+                Get daily trading signals, winning strategies, and expert market analysis to maximize your profits!
+            </p>
+
+            <div class="ad-box">
+                <span class="ad-tag">Ad by</span>
+                <span class="ad-name">swasthik digital</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    // 30 minutes countdown (1800 seconds)
+    let timeLeft = 1800;
+
+    function updateTimer() {
+        let minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+
+        if (seconds < 10) seconds = "0" + seconds;
+
+        document.getElementById("redirect-timer").innerText =
+            `Redirecting in ${minutes}:${seconds}...`;
+
+        if (timeLeft <= 0) {
+            window.location.href = "https://t.me/+cy4GSgQRyG4yMGRl";
+        } else {
+            timeLeft--;
+            setTimeout(updateTimer, 1000);
+        }
+    }
+
+    updateTimer();
+</script>
+
+</html>
